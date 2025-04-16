@@ -4,9 +4,9 @@ const Home = async (req, resp) => {
   try {
     // const data=await Names.find()
     // console.log(data)
-    resp.status(200).send("this is router home page");
+    resp.status(200).json({message:"this is router home page"});
   } catch (error) {
-    resp.status(400).send("error.massege");
+    resp.status(400).json({message:"error.massege"});
   }
 };
 
